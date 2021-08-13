@@ -1,0 +1,31 @@
+plugins {
+    id 'cpp-library'
+    id 'maven-publish'
+}
+
+version = "6.5.4"
+group =  'com.company'
+
+library {
+    //linkage = [Linkage.SHARED]
+    //targetMachines = [machines.linux.x86_64, machines.windows.x86_64]
+    dependencies {
+        api "com.company:list:3.2.1"
+    }
+}
+
+repositories {
+    maven {
+        url "../test-repo"
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            name "local"
+            url "../test-repo"
+        }
+    }
+}
+

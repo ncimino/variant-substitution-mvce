@@ -1,0 +1,7 @@
+-o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/exe/main/debug/app
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/obj/main/debug/5v08dtn7cszvzrlgdayn1y9u6/main.o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/obj/main/debug/f0c36b8y9kkzr0hshipmuavim/message.o
+/wrk/xcohdnobkup1/nikc/temp/.gradle/caches/modules-2/files-2.1/com.company/utilities_debug/6.5.4/53ac4268bfe8cf26429cedcc16997537abe4e0e1/libutilities.so
+/wrk/xcohdnobkup1/nikc/temp/.gradle/caches/modules-2/files-2.1/com.company/list_debug/3.2.1/e0a842df57f3645b24c5868333ca631890e1347c/liblist.so
+-m64

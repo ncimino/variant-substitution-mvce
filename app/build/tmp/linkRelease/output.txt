@@ -1,0 +1,4 @@
+See file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/linkRelease/output.txt for all output for linkRelease.
+linking app successful.
+
+Finished linkRelease, see full log file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/linkRelease/output.txt.

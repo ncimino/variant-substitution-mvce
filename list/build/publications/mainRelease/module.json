@@ -1,0 +1,63 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../list/3.2.1/list-3.2.1.module",
+    "group": "com.company",
+    "module": "list",
+    "version": "3.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseLink",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": true,
+        "org.gradle.usage": "native-link"
+      },
+      "files": [
+        {
+          "name": "liblist.so",
+          "url": "list_release-3.2.1.so",
+          "size": 13712,
+          "sha512": "56a2b1cc8af38e5f10bd2bbcdd09482c0d19fa7d998b894a6c833b59a5f19037e94c858ac9b17f99893030f80e893d9f487cf44aaab3fcb3ad760d6ce1c5018d",
+          "sha256": "fb07735442eb04b822a477760c1a56f5b063f8d2ab135644c558cedd3a447321",
+          "sha1": "efbbd74fee1cea9ca964153035ca10011175e830",
+          "md5": "408337b46756869416a51b68a1fc3022"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": true,
+        "org.gradle.usage": "native-runtime"
+      },
+      "files": [
+        {
+          "name": "liblist.so",
+          "url": "list_release-3.2.1.so",
+          "size": 13712,
+          "sha512": "56a2b1cc8af38e5f10bd2bbcdd09482c0d19fa7d998b894a6c833b59a5f19037e94c858ac9b17f99893030f80e893d9f487cf44aaab3fcb3ad760d6ce1c5018d",
+          "sha256": "fb07735442eb04b822a477760c1a56f5b063f8d2ab135644c558cedd3a447321",
+          "sha1": "efbbd74fee1cea9ca964153035ca10011175e830",
+          "md5": "408337b46756869416a51b68a1fc3022"
+        }
+      ]
+    }
+  ]
+}

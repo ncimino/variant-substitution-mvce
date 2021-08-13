@@ -1,0 +1,43 @@
+plugins {
+    id 'cpp-application'
+    id 'cpp-unit-test'
+    id 'maven-publish'
+}
+
+version = "6.5.4"
+group =  'com.company'
+
+
+repositories {
+    maven {
+        url "../test-repo"
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            name "local"
+            url "../test-repo"
+        }
+    }
+}
+
+dependencies {
+    implementation "com.company:utilities:6.5.4"
+    implementation "com.company:list:3.2.1"
+}
+
+afterEvaluate {
+    configurations.nativeRuntimeTest {
+        resolutionStrategy.dependencySubstitution {
+            substitute(module('com.company:utilities:6.5.4'))
+                    .using variant(module('com.company:utilities:6.5.4')) {
+                attributes {
+                    attribute(Attribute.of("org.gradle.native.optimized", Boolean.class), true)
+                }
+            }
+        }
+    }
+}
+

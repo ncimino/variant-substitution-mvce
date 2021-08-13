@@ -1,0 +1,56 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../app/6.5.4/app-6.5.4.module",
+    "group": "com.company",
+    "module": "app",
+    "version": "6.5.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": true,
+        "org.gradle.usage": "native-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.company",
+          "module": "utilities",
+          "version": {
+            "requires": "6.5.4"
+          }
+        },
+        {
+          "group": "com.company",
+          "module": "list",
+          "version": {
+            "requires": "3.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "app",
+          "url": "app_release-6.5.4",
+          "size": 13616,
+          "sha512": "789110af7f005d7f25587a91c304326c317a5ee28635193e589d0aaeec82eccf291076252f2c41dc9d2e66238d68be5c9eca7d69457f9e5ab9eb6e1cc131d18e",
+          "sha256": "45b19d7a0e8a29a2a072322f8b9a03c0d70700239de9f12af4df46ed67ee1807",
+          "sha1": "db69b6c8d4004652ad97ac9471c59fbe7dc7dfd7",
+          "md5": "e704dc0432b7a6e9fffb03bfe9b11ea3"
+        }
+      ]
+    }
+  ]
+}

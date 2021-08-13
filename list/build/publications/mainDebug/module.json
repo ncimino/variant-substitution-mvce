@@ -1,0 +1,63 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../list/3.2.1/list-3.2.1.module",
+    "group": "com.company",
+    "module": "list",
+    "version": "3.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-runtime"
+      },
+      "files": [
+        {
+          "name": "liblist.so",
+          "url": "list_debug-3.2.1.so",
+          "size": 102960,
+          "sha512": "b92c5a709c0aed59b66ee4d9f72eb024fdea8141dbd6e8392f50e4bb400694d8e5f0cb71fff7795872dd77520cb0b637f21201439a4480b2cc219f387466d74d",
+          "sha256": "021f8784ec58411c30608f6c530f88ef85fcfbe25f53f8e995fcec16cd8158d4",
+          "sha1": "e0a842df57f3645b24c5868333ca631890e1347c",
+          "md5": "5bcd9757e237e4267cb54c2c18004572"
+        }
+      ]
+    },
+    {
+      "name": "debugLink",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-link"
+      },
+      "files": [
+        {
+          "name": "liblist.so",
+          "url": "list_debug-3.2.1.so",
+          "size": 102960,
+          "sha512": "b92c5a709c0aed59b66ee4d9f72eb024fdea8141dbd6e8392f50e4bb400694d8e5f0cb71fff7795872dd77520cb0b637f21201439a4480b2cc219f387466d74d",
+          "sha256": "021f8784ec58411c30608f6c530f88ef85fcfbe25f53f8e995fcec16cd8158d4",
+          "sha1": "e0a842df57f3645b24c5868333ca631890e1347c",
+          "md5": "5bcd9757e237e4267cb54c2c18004572"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.company",
+    "module": "utilities",
+    "version": "6.5.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "api",
+      "attributes": {
+        "artifactType": "zip",
+        "org.gradle.usage": "cplusplus-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.company",
+          "module": "list",
+          "version": {
+            "requires": "3.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "cpp-api-headers.zip",
+          "url": "utilities-6.5.4-cpp-api-headers.zip",
+          "size": 436,
+          "sha512": "77145fd3db533d13c708bb8590bb762e77fc91c7557c303515056b0c3bcf35fc6f4d3626623bbefdaf8863062b2752997e9b2ac9f85b3fc7624a998f7dcb8c37",
+          "sha256": "38b01b2e780bac10ce85df8222c8035b65bc6b05ad5319d935becd8ffb1eff4b",
+          "sha1": "12bebf21f8af105b4bae84794ecb573e487a4488",
+          "md5": "785046f0d0195bacb7a1abf48bd2c3a5"
+        }
+      ]
+    },
+    {
+      "name": "debugRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-runtime"
+      },
+      "available-at": {
+        "url": "../../utilities_debug/6.5.4/utilities_debug-6.5.4.module",
+        "group": "com.company",
+        "module": "utilities_debug",
+        "version": "6.5.4"
+      }
+    },
+    {
+      "name": "debugLink",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-link"
+      },
+      "available-at": {
+        "url": "../../utilities_debug/6.5.4/utilities_debug-6.5.4.module",
+        "group": "com.company",
+        "module": "utilities_debug",
+        "version": "6.5.4"
+      }
+    },
+    {
+      "name": "releaseRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": true,
+        "org.gradle.usage": "native-runtime"
+      },
+      "available-at": {
+        "url": "../../utilities_release/6.5.4/utilities_release-6.5.4.module",
+        "group": "com.company",
+        "module": "utilities_release",
+        "version": "6.5.4"
+      }
+    },
+    {
+      "name": "releaseLink",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": true,
+        "org.gradle.usage": "native-link"
+      },
+      "available-at": {
+        "url": "../../utilities_release/6.5.4/utilities_release-6.5.4.module",
+        "group": "com.company",
+        "module": "utilities_release",
+        "version": "6.5.4"
+      }
+    }
+  ]
+}

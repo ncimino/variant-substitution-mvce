@@ -1,0 +1,4 @@
+See file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/tmp/stripSymbolsRelease/output.txt for all output for stripSymbolsRelease.
+Stripping libutilities.so successful.
+
+Finished stripSymbolsRelease, see full log file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/tmp/stripSymbolsRelease/output.txt.

@@ -1,0 +1,81 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../utilities/6.5.4/utilities-6.5.4.module",
+    "group": "com.company",
+    "module": "utilities",
+    "version": "6.5.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.company",
+          "module": "list",
+          "version": {
+            "requires": "3.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "libutilities.so",
+          "url": "utilities_debug-6.5.4.so",
+          "size": 47728,
+          "sha512": "2e431cd669a4e99bcda26ccd5889ee08ebc981c9cbec51deb543bf957443eac000167a88117490db09a73090cddf6ff38c73195025bafcc40e588f3ceb9bd761",
+          "sha256": "202880533c4aba455113a2379f13781ea97717547575866cc3f7137b4c8856ee",
+          "sha1": "53ac4268bfe8cf26429cedcc16997537abe4e0e1",
+          "md5": "fb373ab9803f811cdc87752ce8bf216e"
+        }
+      ]
+    },
+    {
+      "name": "debugLink",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-link"
+      },
+      "dependencies": [
+        {
+          "group": "com.company",
+          "module": "list",
+          "version": {
+            "requires": "3.2.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "libutilities.so",
+          "url": "utilities_debug-6.5.4.so",
+          "size": 47728,
+          "sha512": "2e431cd669a4e99bcda26ccd5889ee08ebc981c9cbec51deb543bf957443eac000167a88117490db09a73090cddf6ff38c73195025bafcc40e588f3ceb9bd761",
+          "sha256": "202880533c4aba455113a2379f13781ea97717547575866cc3f7137b4c8856ee",
+          "sha1": "53ac4268bfe8cf26429cedcc16997537abe4e0e1",
+          "md5": "fb373ab9803f811cdc87752ce8bf216e"
+        }
+      ]
+    }
+  ]
+}

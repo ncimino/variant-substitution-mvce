@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.company",
+    "module": "list",
+    "version": "3.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "api",
+      "attributes": {
+        "artifactType": "zip",
+        "org.gradle.usage": "cplusplus-api"
+      },
+      "files": [
+        {
+          "name": "cpp-api-headers.zip",
+          "url": "list-3.2.1-cpp-api-headers.zip",
+          "size": 802,
+          "sha512": "56f4cef947f44fe02970538bff9f2680ceb44d1f5f6a09c9eaafedf377d5b75e5080c1f6b1edac56e243c2683d69cf05b2fca68a04494e2803e9a1da2fd7dff6",
+          "sha256": "22cc0e1abaa1d354ea149323cf303331271784ae0d82cddde9e1f1185d0bee88",
+          "sha1": "729b0be44419059b6386ecc60b94423024905739",
+          "md5": "ccbc176f32f25a0e22c9407931ea55da"
+        }
+      ]
+    },
+    {
+      "name": "debugRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-runtime"
+      },
+      "available-at": {
+        "url": "../../list_debug/3.2.1/list_debug-3.2.1.module",
+        "group": "com.company",
+        "module": "list_debug",
+        "version": "3.2.1"
+      }
+    },
+    {
+      "name": "debugLink",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": false,
+        "org.gradle.usage": "native-link"
+      },
+      "available-at": {
+        "url": "../../list_debug/3.2.1/list_debug-3.2.1.module",
+        "group": "com.company",
+        "module": "list_debug",
+        "version": "3.2.1"
+      }
+    },
+    {
+      "name": "releaseLink",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": true,
+        "org.gradle.usage": "native-link"
+      },
+      "available-at": {
+        "url": "../../list_release/3.2.1/list_release-3.2.1.module",
+        "group": "com.company",
+        "module": "list_release",
+        "version": "3.2.1"
+      }
+    },
+    {
+      "name": "releaseRuntime",
+      "attributes": {
+        "org.gradle.native.architecture": "x86-64",
+        "org.gradle.native.debuggable": true,
+        "org.gradle.native.linkage": "SHARED",
+        "org.gradle.native.operatingSystem": "linux",
+        "org.gradle.native.optimized": true,
+        "org.gradle.usage": "native-runtime"
+      },
+      "available-at": {
+        "url": "../../list_release/3.2.1/list_release-3.2.1.module",
+        "group": "com.company",
+        "module": "list_release",
+        "version": "3.2.1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+-shared
+-Wl,-soname,liblist.so
+-o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/list/build/lib/main/debug/liblist.so
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/list/build/obj/main/debug/57uiwkglely1v0krq64yn8ivd/add.o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/list/build/obj/main/debug/9ryzqhmpa69of9utjiizgddi3/copy_ctor_assign.o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/list/build/obj/main/debug/3gfmv4hei6kdj2kxpjtavx6sh/destructor.o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/list/build/obj/main/debug/d7rpxlv4rhfra2lzuvpri9lyj/get.o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/list/build/obj/main/debug/7l1rrxf4ugu1brfnb9msa2y3i/remove.o
+/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/list/build/obj/main/debug/60yemoco4lam131yntpgpbh2r/size.o
+-m64

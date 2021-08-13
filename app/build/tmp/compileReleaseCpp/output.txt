@@ -1,0 +1,6 @@
+See file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/compileReleaseCpp/output.txt for all output for compileReleaseCpp.
+compiling message.cpp successful.
+
+compiling main.cpp successful.
+
+Finished compileReleaseCpp, see full log file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/compileReleaseCpp/output.txt.
