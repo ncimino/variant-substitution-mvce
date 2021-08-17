@@ -1,4 +1,0 @@
-See file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/linkTest/output.txt for all output for linkTest.
-linking appTest successful.
-
-Finished linkTest, see full log file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/linkTest/output.txt.

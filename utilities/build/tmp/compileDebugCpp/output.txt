@@ -1,6 +1,0 @@
-See file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/tmp/compileDebugCpp/output.txt for all output for compileDebugCpp.
-compiling split.cpp successful.
-
-compiling join.cpp successful.
-
-Finished compileDebugCpp, see full log file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/tmp/compileDebugCpp/output.txt.

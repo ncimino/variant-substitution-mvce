@@ -1,4 +1,0 @@
-See file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/tmp/linkDebug/output.txt for all output for linkDebug.
-linking libutilities.so successful.
-
-Finished linkDebug, see full log file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/tmp/linkDebug/output.txt.

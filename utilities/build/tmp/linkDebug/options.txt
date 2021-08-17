@@ -1,8 +1,0 @@
--shared
--Wl,-soname,libutilities.so
--o
-/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/lib/main/debug/libutilities.so
-/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/obj/main/debug/c2kofpfbdvl0ox5prbhyuwx8n/join.o
-/proj/xcohdstaff1/nikc/github/variant-substitution-mvce/utilities/build/obj/main/debug/8dasnq975rzjosysh2j5fktog/split.o
-/wrk/xcohdnobkup1/nikc/temp/.gradle/caches/modules-2/files-2.1/com.company/list_debug/3.2.1/e0a842df57f3645b24c5868333ca631890e1347c/liblist.so
--m64

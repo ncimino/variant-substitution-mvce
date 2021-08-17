@@ -1,4 +1,0 @@
-See file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/compileTestCpp/output.txt for all output for compileTestCpp.
-compiling main.cpp successful.
-
-Finished compileTestCpp, see full log file:///proj/xcohdstaff1/nikc/github/variant-substitution-mvce/app/build/tmp/compileTestCpp/output.txt.
