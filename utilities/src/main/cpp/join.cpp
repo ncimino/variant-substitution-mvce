@@ -10,6 +10,9 @@ UTILITIES_API std::string join(const linked_list & source) {
             result.append(" ");
         }
         result.append(source.get(i));
+#ifdef NDEBUG
+        result.append("DEBUG");
+#endif
     }
 
     return result;

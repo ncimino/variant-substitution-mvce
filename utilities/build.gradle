@@ -29,3 +29,10 @@ publishing {
     }
 }
 
+afterEvaluate { // the optimized flag is false even for compileReleaseCpp up until afterEvaluate... bug?
+    tasks.withType(CppCompile).configureEach {
+        if (!it.optimized) {
+            macros.put("NDEBUG", null)
+        }
+    }
+}
