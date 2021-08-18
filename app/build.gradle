@@ -24,19 +24,15 @@ publishing {
 }
 
 dependencies {
-    implementation "com.company:utilities:6.5.4"
+    implementation("com.company:utilities:6.5.4") {
+        attributes {
+            attribute(CppBinary.OPTIMIZED_ATTRIBUTE, false)
+        }
+    }
     implementation "com.company:list:3.2.1"
-}
-
-afterEvaluate {
-    configurations.nativeRuntimeTest {
-        resolutionStrategy.dependencySubstitution {
-            substitute(module('com.company:utilities:6.5.4'))
-                    .using variant(module('com.company:utilities:6.5.4')) {
-                attributes {
-                    attribute(Attribute.of("org.gradle.native.optimized", Boolean.class), true)
-                }
-            }
+    attributesSchema {
+        attribute(CppBinary.OPTIMIZED_ATTRIBUTE) {
+            compatibilityRules.ordered(Comparator.naturalOrder())
         }
     }
 }
