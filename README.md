@@ -77,6 +77,55 @@ See: https://gradle-community.slack.com/archives/CAH4ZP3GX/p1628976229066300?thr
         }
     }
 
+### Bonus - Reversing it
+
+To reverse this behavior - that is: to use all debug libraries and swap out one
+as optimized/release, then the sorting order must be reversed.
+
+Here is an example of how this would work:
+
+    dependencies {
+        implementation("com.company:utilities:6.5.4") {
+            attributes {
+                attribute(CppBinary.OPTIMIZED_ATTRIBUTE, true)
+            }
+        }
+        implementation "com.company:list:3.2.1"
+        attributesSchema {
+            attribute(CppBinary.OPTIMIZED_ATTRIBUTE) {
+                compatibilityRules.reverseOrdered(Comparator.naturalOrder())
+            }
+        }
+    }
+
+The reason for the `compatibilityRules` is that we must hook into Gradle and 
+define how these properties are used for normal dependency resolution. Gradle
+does this by comparing values and sorting them. Normally it uses a natural sort
+order which places optimized `true` to be used before `false` when building 
+release. This means that Gradle will select optimized binaries before it will
+select non-optimized (debug) binaries for release builds. 
+
+When we are telling Gradle that we would like to build debug and swap out one 
+library to be optimized, then we must tell Gradle that we want optimized for 
+that module and that it is also Okay to swap out an `optimized` equals `true` 
+match even if a `false` exists - normally it would prefer to pick the 
+non-optimized for debug builds.
+
+To read more on this, here are the Gradle DSL and Java API documents that 
+explain how these pieces come together:
+
+* https://docs.gradle.org/current/dsl/org.gradle.api.artifacts.dsl.DependencyHandler.html
+
+* https://docs.gradle.org/current/javadoc/org/gradle/api/artifacts/dsl/DependencyHandler.html
+
+* https://docs.gradle.org/current/javadoc/org/gradle/api/attributes/AttributesSchema.html
+
+* https://docs.gradle.org/current/javadoc/org/gradle/api/attributes/Attribute.html
+
+* https://docs.gradle.org/current/javadoc/org/gradle/api/attributes/AttributeMatchingStrategy.html
+
+* https://docs.gradle.org/current/javadoc/org/gradle/api/attributes/CompatibilityRuleChain.html
+
 
 ## Attempted Solution - Did not work
 
