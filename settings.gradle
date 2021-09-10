@@ -1,0 +1,4 @@
+rootProject.name = 'variant-substitution-mvce'
+include 'utilities'
+include 'list'
+include 'app'

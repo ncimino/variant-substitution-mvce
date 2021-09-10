@@ -24,15 +24,15 @@ publishing {
 }
 
 dependencies {
-    implementation("com.company:utilities:6.5.4") {
+    implementation("com.company:list:3.2.1") {
         attributes {
-            attribute(CppBinary.OPTIMIZED_ATTRIBUTE, false)
+            attribute(CppBinary.OPTIMIZED_ATTRIBUTE, true)
         }
     }
-    implementation "com.company:list:3.2.1"
+    implementation("com.company:utilities:6.5.4")
     attributesSchema {
         attribute(CppBinary.OPTIMIZED_ATTRIBUTE) {
-            compatibilityRules.ordered(Comparator.naturalOrder())
+            compatibilityRules.reverseOrdered(Comparator.naturalOrder())
         }
     }
 }
