@@ -8,26 +8,27 @@ testing).
 
 There are dependent projects, so go ahead and build those first:
 
-    ./gradlew -p ./list/ publishAllPublicationsToLocalRepo
-    ./gradlew -p ./utilities/ publishAllPublicationsToLocalRepo
+    ./gradlew list:publishAllPublicationsToLocalRepo
+    ./gradlew utilities:publishAllPublicationsToLocalRepo
 
 Then run the project that attempts to swap out the module variant:
 
-    ./gradlew -p ./app/ assembleRelease
+    ./gradlew app:build
 
 This produces:
 
-    * What went wrong:
-    Execution failed for task ':installTest'.
-    > Could not resolve all files for configuration ':nativeRuntimeTest'.
-    > Could not resolve com.company:utilities_release:6.5.4.
-        Required by:
-            project : > com.company:utilities:6.5.4
-        > No matching variant of com.company:utilities_release:6.5.4 was found. The consumer was configured to find attribute 'org.gradle.usage' with value 'native-runtime', attribute 'org.gradle.native.debuggable' with value 'true', attribute 'org.gradle.native.optimized' with value 'false', attribute 'org.gradle.native.operatingSystem' with value 'linux', attribute 'org.gradle.native.architecture' with value 'x86-64' but:
-            - Variant 'releaseLink' capability com.company:utilities_release:6.5.4 declares attribute 'org.gradle.native.architecture' with value 'x86-64', attribute 'org.gradle.native.debuggable' with value 'true', attribute 'org.gradle.native.operatingSystem' with value 'linux':
-                - Incompatible because this component declares attribute 'org.gradle.native.optimized' with value 'true', attribute 'org.gradle.usage' with value 'native-link' and the consumer needed attribute 'org.gradle.native.optimized' with value 'false', attribute 'org.gradle.usage' with value 'native-runtime'
-            - Variant 'releaseRuntime' capability com.company:utilities_release:6.5.4 declares attribute 'org.gradle.native.architecture' with value 'x86-64', attribute 'org.gradle.native.debuggable' with value 'true', attribute 'org.gradle.native.operatingSystem' with value 'linux', attribute 'org.gradle.usage' with value 'native-runtime':
-                - Incompatible because this component declares attribute 'org.gradle.native.optimized' with value 'true' and the consumer needed attribute 'org.gradle.native.optimized' with value 'false'
+    Execution failed for task ':app:linkDebug'.
+    > Could not resolve all files for configuration ':app:nativeLinkDebug'.
+       > Could not resolve com.company:list:3.2.1.
+         Required by:
+             project :app
+          > Module 'com.company:list' has been rejected:
+               Cannot select module with conflict on capability 'com.company:list:3.2.1' also provided by [com.company:list:3.2.1(debugLink), com.company:list:3.2.1(releaseLink)]
+       > Could not resolve com.company:list:3.2.1.
+         Required by:
+             project :app > com.company:utilities:6.5.4 > com.company:utilities_debug:6.5.4
+          > Module 'com.company:list' has been rejected:
+               Cannot select module with conflict on capability 'com.company:list:3.2.1' also provided by [com.company:list:3.2.1(debugLink), com.company:list:3.2.1(releaseLink)]
 
 # Further Debug
 
